@@ -25,7 +25,6 @@ header > div {
 
 header .logo img {
 	height: 100%;
-	/*padding: 20px;*/
 }
 
 header .navbar {
@@ -52,7 +51,6 @@ header .navbar li {
 div.main-content {
 	width: 100%;
 	background-color: #3b3b3b;
-
 }
 
 div.main-content .container {
@@ -120,12 +118,41 @@ div.main-content .container > div {
 
 .number-content {
 	width: 100%;
+	background-color: #1e8bc3;
 }
 
 .number-content .container {
-	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 50px;
 }
 
+.number-content .container > div.card {
+	width: 300px;
+	height: 300px;
+	background-color: #3b3b3b;
+	border: 8px solid #efefef;
+	margin: 20px;
+	border-radius: 30px;
+	text-align: center;
+}
+
+.number-content .container > div.card > p {
+	font-size: 6em;
+	color: #efefef;
+}
+
+.card:nth-of-type(1) { order: 5; }
+.card:nth-of-type(2) { order: 2; }
+.card:nth-of-type(3) { order: 1; }
+.card:nth-of-type(4) { order: 6; }
+.card:nth-of-type(5) { order: 4; }
+.card:nth-of-type(6) { order: 9; }
+.card:nth-of-type(7) { order: 7; }
+.card:nth-of-type(8) { order: 3; }
+.card:nth-of-type(9) { order: 8; }
 
 
 footer {
