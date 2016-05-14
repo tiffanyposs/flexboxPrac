@@ -155,6 +155,40 @@ div.main-content .container > div {
 .card:nth-of-type(9) { order: 8; }
 
 
+.grow-content {
+	background-color: #cfcfcf;
+	padding: 50px 20px;
+}
+
+.grow-content .grow-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.grow-content .grow-row > div {
+	height: 300px;
+	background-color: white;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+.grow-content .grow-row.even > div {
+	flex-grow: 1;
+	flex-basis: 300px;
+}
+
+.grow-content .grow-row.two-one > div:first-child,
+.grow-content .grow-row.one-two > div:nth-child(2) {
+	flex-grow: 2;
+	flex-basis: 640px;
+}
+
+.grow-content .grow-row.two-one > div:nth-child(2),
+.grow-content .grow-row.one-two > div:first-child {
+	flex-grow: 1;
+	flex-basis: 300px;
+}
+
 footer {
 	width: 100%;
 	height: 400px;
